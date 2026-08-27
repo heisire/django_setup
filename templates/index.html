@@ -1,0 +1,57 @@
+{% load static %} {% comment %}
+<!-- {% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Django Landing Page</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+  </head>
+  <body class="home-page">
+    <main class="hero-card">
+      <section class="hero-copy">
+        <p class="hero-kicker">Welcome to your Django site</p>
+        <h1>Build beautiful pages with simple templates.</h1>
+        <p class="hero-text">
+          This landing page now feels more polished with a clean layout, modern
+          colors, and easy navigation.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="{% url 'about' %}">About</a>
+          <a class="btn btn-secondary" href="{% url 'post' %}">Post</a>
+         
+        </div>
+      </section>
+
+      <section class="hero-visual">
+        <img src="{% static 'images/Scene.jpg' %}" alt="Scenery Image" />
+      </section>
+    </main>
+  </body>
+</html> -->
+{% endcomment %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Index Page</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+  </head>
+  <body>
+    <h1>welcome to my HTML RENDERING</h1>
+    <a href="./about">About Page</a><br />
+    <a href="{% url 'about' %}">About Page</a><br />
+    <a href="{% url 'posts' %}">Posts</a><br />
+    <a href="{% url 'create_user' %}">Creater Account</a><br />
+    <img
+      src="{% static 'images/Scene.jpg' %}"
+      alt="My Image"
+      width="500"
+      height="500"
+    />
+  </body>
+</html>
